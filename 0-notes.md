@@ -1,0 +1,36 @@
+# Timeey Client
+
+- setup nextjs app
+    - we will be using pnpm
+- setup Folder Structure
+- setup routes
+    - error handling
+        - setup 404 page
+        - keep the original 500 page so that we can show the specific errors to the app user
+            - <https://nextjs.org/docs/pages/building-your-application/configuring/error-handling>
+        - advanced concept - ErrorBoundary (not covered)
+    - folder structure for sharing layouts
+- server components / client components
+    - enforcing server components
+        - use the "use server" package
+    - link to component organization
+- styling
+    - styling the body
+        - pancake style (<https://web.dev/patterns/layout/pancake-stack/>)
+    - styling buttons
+        - only what will actually be used
+        - only use type button by default
+    - clock component
+        - make sure initial state of clock component is independent of client / server
+    - component organization
+        - put route specific components in `app/`
+        - put shared components in `components/`
+- setup api
+    - take in user credentials for every request
+        - we don't need to keep track of whether the axiosInstance has the correct state or not
+    - create types
+- setup react query
+    - we will only use "client" version of react query
+- using middleware
+    - redirect using server cookies
+    - setting client cookies on login
